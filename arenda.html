@@ -1,191 +1,147 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="ru">
+<head itemscope="" itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аренда - SOHO Catering</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="B5-eRuI0HTk5-93ruIz0Wd7RH2dSSa-FCD8IXcu0tTA05sw201JeCAmzlJPpz6UJuJllEh8qzN9OZ0ka_OX5BQ==">
+    <title itemprop="headline">Аренда оборудования для мероприятий в Москве</title>
+    <meta name="description" content="✅ Прокат оборудования для кейтеринга в Москве: мебель, текстиль, посуда и оборудование. ☑ Работаем круглосуточно. ☑ Выгодные бонусы. Звоните ☎ +7(495)127-09-94">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Аренда оборудования для мероприятий в Москве">
+    <meta property="og:description" content="✅ Прокат оборудования для кейтеринга в Москве: мебель, текстиль, посуда и оборудование. ☑ Работаем круглосуточно. ☑ Выгодные бонусы. Звоните ☎ +7(495)127-09-94">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soho-catering.ru/arenda">
+    <link href="https://1tap04ek1.github.io/site-clon/" rel="canonical">
     
-    <!-- Подключаем стили -->
-    <link rel="css/bootstrap.min.css" href="bootstrap.min.css">
-    <link rel="css/font-awesome.min.css" href="font-awesome.min.css">
-    <link rel="css/style.css" href="style.css">
-    <link rel="css/sweetalert2.min.css" href="sweetalert2.min.css">
+    <!-- ПРАВИЛЬНЫЕ ПУТИ К CSS ФАЙЛАМ В ПАПКЕ CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sweetalert2.min.css" rel="stylesheet">
+    <link href="css/shop.css" rel="stylesheet">
     
-    <style>
-        /* Дополнительные стили для шапки */
-        .top-header {
-            background: #f8f9fa;
-            padding: 10px 0;
-            font-size: 14px;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        
-        .phone-numbers {
-            font-weight: bold;
-        }
-        
-        .cart-empty {
-            color: #6c757d;
-        }
-        
-        .main-header {
-            padding: 15px 0;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .nav-link {
-            color: #333;
-            font-weight: 500;
-            margin: 0 10px;
-        }
-        
-        .nav-link:hover {
-            color: #007bff;
-        }
-        
-        .search-form {
-            margin-left: 20px;
-        }
-        
-        .ratings {
-            background: #f8f9fa;
-            padding: 20px 0;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        .rating-item {
-            text-align: center;
-        }
-        
-        .stars {
-            color: #ffc107;
-            font-size: 18px;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .manager-section {
-            background: #f8f9fa;
-            padding: 30px 0;
-            text-align: center;
-        }
-    </style>
+    <meta property="og:image" content="images/s-v2.png">
+    <meta name="yandex-verification" content="a8c44f36ed725880">
+    <meta name="yandex-verification" content="d658136e2838049a">
+    <meta name="google-site-verification" content="dflWMsQkt30Gz7UfZQrixbQy1fqUi9JUytN8DUNySro">
 </head>
 <body>
 
-<!-- Верхняя панель с контактами -->
-<div class="top-header">
+<div class="header">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <div class="contact-info">
-                    <span>Работаем круглосуточно</span>
-                    <a href="mailto:info@soho-catering.ru">info@soho-catering.ru</a>
-                    <a href="mailto:buh@soho-catering.ru">buh@soho-catering.ru - для документов</a>
+        <div class="d-flex flex-wrap justify-content-around align-items-center">
+            <div class="header__logo">
+                <a href="index.html">
+                    <div class="header__logo_left">
+                        <img src="images/s-v2.png" alt="soho" width="58" height="90">
+                    </div>
+                    <div class="header__logo_right">
+                        <img src="images/soho-v2.png" alt="soho" width="149" height="50">
+                        <div class="header__logo_desc">Аренда банкетного оборудования</div>
+                    </div>
+                </a>
+            </div>
+            <div class="header__basket d-none d-sm-block d-md-none">
+                <a href="/arenda/basket">
+                    <div class="header__basket_element">
+                        <div class="header__basket_left">
+                            <div class="header__basket_img"></div>
+                            <div class="header__basket_count">0</div>
+                        </div>
+                        <div class="header__basket_right">
+                            <div class="header__basket_name">Корзина</div>
+                            <div class="header__basket_value">Пуста</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="header__contacts d-none d-md-block">
+                <div class="header__contacts_work">
+                    Работаем круглосуточно
+                </div>
+                <div class="header__contacts_mail">
+                    <a href="mailto:info@soho-catering.ru">
+                        info@soho-catering.ru
+                    </a>
+                </div>
+                <div class="header__contacts_mail">
+                    <a href="mailto:buh@soho-catering.ru">
+                        buh@soho-catering.ru - для документов
+                    </a>
                 </div>
             </div>
-            <div class="col-md-6 text-end">
-                <div class="phone-numbers">
-                    <span>+7 (495) 127-09-94</span>
-                    <span style="margin-left: 15px;">+7 (929) 553-14-99</span>
+            <div class="header__contacts">
+                <div class="header__contacts_item">
+                    <a class="header__contacts_phone" href="tel:+7(495)127-09-94">
+                        + 7 (495) 127-09-94
+                    </a>
                 </div>
+                <div class="header__contacts_item">
+                    <a class="header__contacts_phone header__contacts_whatsapp" href="tel:+7(929)553-14-99">
+                        + 7 (929) 553-14-99
+                    </a>
+                </div>
+            </div>
+            <div class="header__basket d-sm-none d-md-block">
+                <a href="/arenda/basket">
+                    <div class="header__basket_element">
+                        <div class="header__basket_left">
+                            <div class="header__basket_img"></div>
+                            <div class="header__basket_count">0</div>
+                        </div>
+                        <div class="header__basket_right">
+                            <div class="header__basket_name">Корзина</div>
+                            <div class="header__basket_value">Пуста</div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Основная навигация -->
-<header class="main-header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-2">
-                <div class="logo">SOHO Catering</div>
-            </div>
-            <div class="col-md-8">
-                <nav class="d-flex justify-content-center align-items-center">
-                    <a href="index.html" class="nav-link">Главная</a>
-                    <a href="arenda.html" class="nav-link active">Аренда</a>
-                    <a href="#" class="nav-link">Новинки</a>
-                    <a href="#" class="nav-link">Условия</a>
-                    <a href="#" class="nav-link">О нас</a>
-                    <a href="#" class="nav-link">Проекты</a>
-                    <a href="#" class="nav-link">Отзывы</a>
-                    <a href="#" class="nav-link">FAQ</a>
-                    <a href="#" class="nav-link">Блог</a>
-                    <a href="#" class="nav-link">Контакты</a>
-                </nav>
-            </div>
-            <div class="col-md-2 text-end">
-                <div class="d-flex align-items-center justify-content-end">
-                    <div class="cart-empty me-3">Корзина Пуста</div>
-                    <form class="search-form">
-                        <input type="text" class="form-control form-control-sm" placeholder="Введите название товара">
-                        <button type="submit" class="btn btn-sm btn-primary mt-1">Найти</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Рейтинги -->
-<section class="ratings">
-    <div class="container">
+<div class="header-menu">
+    <nav class="container navbar-light">
         <div class="row">
-            <div class="col-md-6">
-                <div class="rating-item">
-                    <div class="stars">★★★★★</div>
-                    <div>5.0 Рейтинг организации и Выписки</div>
-                </div>
+            <div class="col-12 col-lg-8 pr-lg-0" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="navbar-nav mr-auto ml-auto ml-lg-0 flex-row flex-wrap justify-content-around">
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link active" href="arenda.html">Аренда</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">Новинки</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">Условия</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">О нас</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">Проекты</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">Отзывы</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">Блог</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#">Контакты</a></li>
+                </ul>
             </div>
-            <div class="col-md-6">
-                <div class="rating-item">
-                    <div class="stars">★★★★★</div>
-                    <div>4.9 Вам дам 14 ноября</div>
-                </div>
+            <div class="col-12 col-lg-4 pl-lg-0 d-flex justify-content-around">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
+</div>
 
-<!-- Герой секция -->
-<section class="hero-section">
-    <div class="container">
-        <h1>Аренда мебели, посуды, текстиля и оборудования для мероприятий в Москве</h1>
-        <p class="lead">Оперативно подберем необходимые наименования, работаем 24/7, доставим заказ точно в срок</p>
-    </div>
-</section>
+<!-- КОНТЕНТ СТРАНИЦЫ АРЕНДЫ -->
+<div class="container mt-4">
+    <h1>Аренда оборудования для мероприятий</h1>
+    <p>Здесь будет контент страницы аренды...</p>
+</div>
 
-<!-- Менеджеры -->
-<section class="manager-section">
-    <div class="container">
-        <h3>НА СВЯЗИ С ВАМИ МЕНЕДЖЕРЫ</h3>
-    </div>
-</section>
-
-<!-- Подключаем скрипты -->
-<script src="jquery.min.js"></script>
-<script src="bootstrap.bundle.min.js"></script>
-<script src="lazysizes.min.js"></script>
-<script src="sweetalert2.all.min.js"></script>
-<script src="main.js"></script>
-<script src="yli.js"></script>
+<!-- ПРАВИЛЬНЫЕ ПУТИ К SCRIPTS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/yli.js"></script>
 
 </body>
 </html>
